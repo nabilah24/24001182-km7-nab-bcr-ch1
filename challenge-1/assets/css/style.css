@@ -1,0 +1,168 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  transition: all 0.3s ease;
+}
+
+:root {
+  /* primary colors */
+  --darkblue05: #091b6f;
+  --darkblue04: #0d28a6;
+  --darkblue03: #5e70c4;
+  --darkblue02: #aeb7e1;
+  --darkblue01: #cfd4ed;
+  --limegreen05: #3d7b3f;
+  --limegreen04: #5cb85f;
+  --limegreen03: #92d094;
+  --limegreen02: #c9e7ca;
+  --limegreen01: #def1df;
+  /* alert colors */
+  --danger: #fa2c5a;
+  --warning: #f9cc00;
+  --success: #73ca5c;
+  /* neutral colors */
+  --neutral05: #151515;
+  --neutral04: #3c3c3c;
+  --neutral03: #8a8a8a;
+  --neutral02: #d0d0d0;
+  --neutral01: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Helvetica', sans-serif;
+  overflow-x: hidden;
+}
+
+/* navigation */
+.navbar-transparent {
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+.navbar-solid {
+  background-color: var(--neutral01);
+}
+
+/* hero-section */
+.hero-section {
+  background: url(../images/hero_bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-section h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  color: var(--neutral05);
+}
+
+.hero-section p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  max-width: 468px;
+  color: var(--neutral05);
+}
+
+.hero-section a {
+  background-color: var(--limegreen04);
+  border: none;
+  border-radius: 3px;
+  color: var(--neutral01);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.hero-section img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  transform: scaleX(-1);
+}
+
+/* service section */
+.service-section h3 {
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--neutral05);
+}
+
+.service-section p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  max-width: 460px;
+  color: var(--neutral05);
+}
+
+.service-section ul li {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  color: var(--neutral05);
+}
+
+.bi-check-lg {
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--darkblue05);
+  background: var(--darkblue01);
+  padding: 2px;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+}
+
+/* why us section */
+.why-us-section h3 {
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--neutral05);
+}
+
+.why-us-section p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  color: var(--neutral05);
+}
+
+.why-us-section .card {
+  box-sizing: border-box;
+  height: 196px; 
+  border: 1px solid var(--neutral02);
+}
+
+.card-body .card-icon i {
+    font-size: 18px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--neutral01);
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border-radius: 50%; 
+}
+
+.card-body h5 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--neutral05)
+}
+
+/* testimonial */
