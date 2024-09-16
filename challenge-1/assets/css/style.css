@@ -14,6 +14,7 @@
   --darkblue03: #5e70c4;
   --darkblue02: #aeb7e1;
   --darkblue01: #cfd4ed;
+  --darkblue00: #f1f3ff;
   --limegreen05: #3d7b3f;
   --limegreen04: #5cb85f;
   --limegreen03: #92d094;
@@ -141,21 +142,21 @@ body {
 
 .why-us-section .card {
   box-sizing: border-box;
-  height: 196px; 
-  border: 1px solid var(--neutral02);
+  height: 196px;
+  border: 1px solid var(--darkblue00);
 }
 
 .card-body .card-icon i {
-    font-size: 18px;
-    font-weight: 900;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--neutral01);
-    width: 32px;
-    height: 32px;
-    padding: 0;
-    border-radius: 50%; 
+  font-size: 18px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--neutral01);
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border-radius: 50%;
 }
 
 .card-body h5 {
@@ -166,3 +167,177 @@ body {
 }
 
 /* testimonial */
+.testimonial-carousel::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: 1;
+}
+
+.testimonial-carousel::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .testimonial-carousel::before,
+  .testimonial-carousel::after {
+      width: 200px;
+  }
+}
+
+@media (min-width: 992px) {
+  .testimonial-carousel::before,
+  .testimonial-carousel::after {
+      width: 300px;
+  }
+}
+
+.testimonial-carousel .owl-item .testimonial-text {
+  background: var(--darkblue00);
+  transform: scale(.8);
+  transition: .5s;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-text {
+  background: var(--darkblue01);
+  transform: scale(1);
+}
+
+.testimonial-carousel .owl-item .testimonial-text *,
+.testimonial-carousel .owl-item .testimonial-item img {
+  transition: .5s;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-text * {
+  color: var(--neutral05);
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item img {
+  background: var(--darkblue01) !important;
+} 
+
+.testimonial-carousel .owl-nav {
+  position: absolute;
+  width: 350px;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  transition: .5s;
+  z-index: 1;
+}
+
+.testimonial-carousel:hover .owl-nav {
+  width: 300px;
+  opacity: 1;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+  position: relative;
+  color: var(--neutral05);
+  font-size: 45px;
+  transition: .5s;
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+  color: var(--limegreen04);
+}
+
+/* cta */
+.cta .card {
+  background: var(--darkblue04);
+  color: var(--neutral01);
+}
+
+.cta .card .card-body p {
+  text-align: center;
+  max-width: 468px;
+  margin: 0 auto; 
+}
+
+.cta .card .card-body a {
+  background-color: var(--limegreen04);
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.cta .card .card-body a:hover {
+  background-color: var(--neutral01);
+  color: var(--limegreen04);
+}
+
+/* faq */
+.accordion-item {
+  margin-bottom: 15px; 
+  border: 1px solid var(--neutral02); 
+  border-radius: 0.25rem;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  color: var(--neutral05);
+}
+
+.accordion-item .accordion-button {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  color: var(--neutral05);
+}
+
+.accordion-collapse {
+  border-top: 1px solid var(--neutral02) !important;
+}
+
+.accordion-button.collapsed {
+  border-top: 1px solid var(--neutral02) !important;
+}
+
+/* footer */
+.footer p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  color: var(--neutral05);
+}
+
+.footer a {
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--neutral05);
+}
+
+.footer .connect-us i {
+  display: inline-flex; /* Menjadikan elemen inline dengan fitur flexbox untuk penataan */
+  justify-content: center; /* Menyejajarkan konten secara horizontal */
+  align-items: center; /* Menyejajarkan konten secara vertikal */
+  font-size: 18px;
+  font-weight: 700;
+  background: var(--darkblue04);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  text-align: center; /* Memastikan teks berada di tengah */
+  line-height: 32px; /* Menyelaraskan teks vertikal */
+  box-sizing: border-box; /* Menghitung padding dan border dalam ukuran total */
+  color: var(--neutral01);
+}
+
