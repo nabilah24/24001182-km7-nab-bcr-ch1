@@ -37,9 +37,9 @@
         aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BCRs</h5>
+      <div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header mt-2">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BCR</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -57,7 +57,9 @@
               <a class="nav-link" href="#faq">FAQ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="" class="btn btn-success">Register</a>
+              <a href="#register">
+                <button type="button" class="btn btn-primary">Register</button>
+              </a>
             </li>
           </ul>
         </div>
@@ -75,8 +77,8 @@
             terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
           <a href="#" class="btn btn-primary py-sm-2 px-sm-3 me-3 wow fadeIn" data-wow-delay="0.3s"">Mulai Sewa Mobil</a>
         </div>
-        <div class="col-md-6 text-lg-end overvlow-hidden animated slideInRight">
-          <img src="assets/images/car.png" alt="car" class="img-fluid">
+        <div class=" col-md-6 text-lg-end overvlow-hidden animated slideInRight">
+            <img src="assets/images/car.png" alt="car" class="img-fluid">
         </div>
       </div>
     </div>
@@ -90,8 +92,10 @@
           <img src="assets/images/img_service.png" alt="" class="img-fluid w-75 wow zoomIn" data-wow-delay="0.3s">
         </div>
         <div class="col-lg-6">
-          <h3 class="Heading text-start fw-bold mb-4 wow fadeIn" data-wow-delay="0.1s">Best Car Rental for any kind of trip in (Lokasimu)!</h3>
-          <p class="mb-3 wow fadeIn" data-wow-delay="0.3s">Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang
+          <h3 class="Heading text-start fw-bold mb-4 wow fadeIn" data-wow-delay="0.1s">Best Car Rental for any kind of
+            trip in (Lokasimu)!</h3>
+          <p class="mb-3 wow fadeIn" data-wow-delay="0.3s">Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan
+            harga lebih murah dibandingkan yang
             lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding,
             meeting, dll.</p>
           <ul class="list-unstyled text-start point-service">
@@ -184,72 +188,77 @@
   </section>
 
   <!-- testimonial -->
-  <div class="container-xxl py-5" id="testimonial">
-    <div class=" container">
-      <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s">
-        <h3 class="heading fw-bold" style="font-size: 24px; line-height: 36px; color: var(--neutral05);">Testimonial
-        </h3>
-        <p class="mt-2 mb-0" style="font-size: 14px; font-weight: 300; line-height: 20px; color: var(--neutral05);">
-          Berbagai review positif dari para pelanggan kami</p>
-      </div>
-      <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-        <div class="testimonial-item text-center">
-          <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="assets/images/testimonial_1.png"
-            style="width: 100px; height: 100px;">
-          <div class="testimonial-text rounded text-center p-4">
-            <p style="font-size: 14px; font-weight: 300; line-height: 20px; color: var(--neutral05);">“Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
-              elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
-            <p class="mb-1 fw-bold" style="font-size: 14px; line-height: 20px; color: var(--neutral05);">John Dee 32,
-              Bromo</p>
-            <div class="rating">
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
+  <section id="testimonial">
+    <div class="container-xxl py-5" id="testimonial">
+      <div class=" container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s">
+          <h3 class="heading fw-bold" style="font-size: 24px; line-height: 36px; color: var(--neutral05);">Testimonial
+          </h3>
+          <p class="mt-2 mb-0" style="font-size: 14px; font-weight: 300; line-height: 20px; color: var(--neutral05);">
+            Berbagai review positif dari para pelanggan kami</p>
+        </div>
+        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+          <div class="testimonial-item text-center">
+            <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="assets/images/testimonial_1.png"
+              style="width: 100px; height: 100px;">
+            <div class="testimonial-text rounded text-center p-4">
+              <p style="font-size: 14px; font-weight: 300; line-height: 20px; color: var(--neutral05);">“Lorem ipsum
+                dolor
+                sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+              <p class="mb-1 fw-bold" style="font-size: 14px; line-height: 20px; color: var(--neutral05);">John Dee 32,
+                Bromo</p>
+              <div class="rating">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="testimonial-item text-center">
-          <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="assets/images/testimonial_2.png"
-            style="width: 100px; height: 100px;">
-          <div class="testimonial-text rounded text-center p-4">
-            <p style="font-size: 14px; font-weight: 300; line-height: 20px; color: var(--neutral05);">“Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
-              elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
-            <p class="mb-1 fw-bold" style="font-size: 14px; line-height: 20px; color: var(--neutral05);">John Dee 32,
-              Bromo</p>
-            <div class="rating">
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
+          <div class="testimonial-item text-center">
+            <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="assets/images/testimonial_2.png"
+              style="width: 100px; height: 100px;">
+            <div class="testimonial-text rounded text-center p-4">
+              <p style="font-size: 14px; font-weight: 300; line-height: 20px; color: var(--neutral05);">“Lorem ipsum
+                dolor
+                sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+              <p class="mb-1 fw-bold" style="font-size: 14px; line-height: 20px; color: var(--neutral05);">John Dee 32,
+                Bromo</p>
+              <div class="rating">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="testimonial-item text-center">
-          <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="assets/images/testimonial_3.jpeg"
-            style="width: 100px; height: 100px;">
-          <div class="testimonial-text rounded text-center p-4">
-            <p style="font-size: 14px; font-weight: 300; line-height: 20px; color: var(--neutral05);">“Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
-              elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
-            <p class="mb-1 fw-bold" style="font-size: 14px; line-height: 20px; color: var(--neutral05);">John Dee 32,
-              Bromo</p>
-            <div class="rating">
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
+          <div class="testimonial-item text-center">
+            <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="assets/images/testimonial_3.jpeg"
+              style="width: 100px; height: 100px;">
+            <div class="testimonial-text rounded text-center p-4">
+              <p style="font-size: 14px; font-weight: 300; line-height: 20px; color: var(--neutral05);">“Lorem ipsum
+                dolor
+                sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+              <p class="mb-1 fw-bold" style="font-size: 14px; line-height: 20px; color: var(--neutral05);">John Dee 32,
+                Bromo</p>
+              <div class="rating">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- cta -->
   <div class="container-xxl cta">
@@ -269,122 +278,130 @@
   </div>
 
   <!-- faq -->
-  <div class="container-xxl faq" id="faq">
-    <div class="container">
-      <div class="row text-start">
-        <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3">
-          <h3 class="Heading text-start fw-bold mb-3 mt-5" style="font-size: 24px; line-height: 36px;">Frequently Asked
-            Question</h3>
-          <p class="mb-3 fw-normal" style="font-size: 14px; line-height: 20px;">Lorem ipsum dolor sit amet, consectur
-            adipiscing elit</p>
-        </div>
-        <div class="col-lg-8">
-          <div class="container mt-5">
-            <div class="accordion" id="accordionExample">
+  <section id="faq">
+    <div class="container-xxl faq" id="faq">
+      <div class="container">
+        <div class="row text-start">
+          <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3">
+            <h3 class="Heading text-start fw-bold mb-3 mt-5" style="font-size: 24px; line-height: 36px;">Frequently
+              Asked
+              Question</h3>
+            <p class="mb-3 fw-normal" style="font-size: 14px; line-height: 20px;">Lorem ipsum dolor sit amet, consectur
+              adipiscing elit</p>
+          </div>
+          <div class="col-lg-8">
+            <div class="container mt-5">
+              <div class="accordion" id="accordionExample">
 
-              <div class="accordion-item wow fadeInUp" data-wow-delay="0.1s">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                    Apa saja syarat yang dibutuhkan?
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                  data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nisi exercitationem eius saepe earum
-                    qui non quo quis beatae perferendis ratione repudiandae unde quas tempore, amet quam quod culpa a,
-                    sed nulla? Neque praesentium minus eligendi ea omnis? Odit quidem aliquam doloremque? Dignissimos
-                    doloribus, libero tenetur eos similique corrupti nihil.
+                <div class="accordion-item wow fadeInUp" data-wow-delay="0.1s">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      Apa saja syarat yang dibutuhkan?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nisi exercitationem eius saepe earum
+                      qui non quo quis beatae perferendis ratione repudiandae unde quas tempore, amet quam quod culpa a,
+                      sed nulla? Neque praesentium minus eligendi ea omnis? Odit quidem aliquam doloremque? Dignissimos
+                      doloribus, libero tenetur eos similique corrupti nihil.
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="accordion-item wow fadeInUp" data-wow-delay="0.3s">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Berapa hari minimal sewa mobil lepas kunci?
-                  </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                  data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsam molestias quam. Accusamus
-                    voluptas error omnis optio aperiam modi quae similique quisquam ipsum ad voluptatem, deserunt odit
-                    ipsam a, quos quo hic nesciunt excepturi harum eaque culpa ea, pariatur distinctio nisi. Labore, at
-                    excepturi. Amet quam ullam magnam reiciendis dignissimos.
+                <div class="accordion-item wow fadeInUp" data-wow-delay="0.3s">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Berapa hari minimal sewa mobil lepas kunci?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsam molestias quam. Accusamus
+                      voluptas error omnis optio aperiam modi quae similique quisquam ipsum ad voluptatem, deserunt odit
+                      ipsam a, quos quo hic nesciunt excepturi harum eaque culpa ea, pariatur distinctio nisi. Labore,
+                      at
+                      excepturi. Amet quam ullam magnam reiciendis dignissimos.
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="accordion-item wow fadeInUp" data-wow-delay="0.5s">
-                <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Berapa hari sebelumnya sebaiknya booking sewa mobil?
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                  data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quam ullam tenetur maiores iure
-                    dolore consequuntur commodi laborum, ducimus deserunt quos amet. Eius dolores accusantium, ex
-                    distinctio deleniti ipsa magni vitae, commodi similique vero unde consequuntur beatae! Voluptatem
-                    saepe temporibus quod eaque fugiat nulla, nihil ad corporis inventore cumque neque!
+                <div class="accordion-item wow fadeInUp" data-wow-delay="0.5s">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Berapa hari sebelumnya sebaiknya booking sewa mobil?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quam ullam tenetur maiores iure
+                      dolore consequuntur commodi laborum, ducimus deserunt quos amet. Eius dolores accusantium, ex
+                      distinctio deleniti ipsa magni vitae, commodi similique vero unde consequuntur beatae! Voluptatem
+                      saepe temporibus quod eaque fugiat nulla, nihil ad corporis inventore cumque neque!
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="accordion-item wow fadeInUp" data-wow-delay="0.7s">
-                <h2 class="accordion-header" id="headingFour">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Apakah Ada biaya antar-jemput?
-                  </button>
-                </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                  data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident earum quas numquam modi
-                    doloremque obcaecati fuga voluptatum error minus dolor veritatis maiores, eveniet ipsum perferendis
-                    odio rerum maxime suscipit ratione corporis a aliquam, vel saepe. Officia, magni repellat quia
-                    distinctio et explicabo, perferendis sequi delectus molestiae quam a esse reiciendis.
+                <div class="accordion-item wow fadeInUp" data-wow-delay="0.7s">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Apakah Ada biaya antar-jemput?
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident earum quas numquam modi
+                      doloremque obcaecati fuga voluptatum error minus dolor veritatis maiores, eveniet ipsum
+                      perferendis
+                      odio rerum maxime suscipit ratione corporis a aliquam, vel saepe. Officia, magni repellat quia
+                      distinctio et explicabo, perferendis sequi delectus molestiae quam a esse reiciendis.
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="accordion-item wow fadeInUp" data-wow-delay="0.9s">
-                <h2 class="accordion-header" id="headingFive">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Bagaimana jika terjadi kecelakaan?
-                  </button>
-                </h2>
-                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                  data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, ad. Libero in maxime vel
-                    deserunt laudantium optio necessitatibus. Sequi libero tenetur, voluptates vitae optio alias aperiam
-                    nesciunt perferendis cupiditate recusandae inventore ullam ut beatae rerum ea quam, id repellendus
-                    voluptatum. Alias rem doloremque placeat repellat atque odit non facilis numquam.
+                <div class="accordion-item wow fadeInUp" data-wow-delay="0.9s">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      Bagaimana jika terjadi kecelakaan?
+                    </button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, ad. Libero in maxime vel
+                      deserunt laudantium optio necessitatibus. Sequi libero tenetur, voluptates vitae optio alias
+                      aperiam
+                      nesciunt perferendis cupiditate recusandae inventore ullam ut beatae rerum ea quam, id repellendus
+                      voluptatum. Alias rem doloremque placeat repellat atque odit non facilis numquam.
+                    </div>
                   </div>
                 </div>
-              </div>
 
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
 
   <!-- footer -->
   <div class="container-fluid footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.3s">
     <div class="container py-5">
       <div class="row g-5">
         <div class="col-lg-3 col-md-6">
-          <p class="mb-3 mt-1"><i class="bi bi-geo-alt-fill me-3"></i>Jalan Suroyo No. 161 Mayangan Kota Probolinggo 672000
+          <p class="mb-3 mt-1"><i class="bi bi-geo-alt-fill me-3"></i>Jalan Suroyo No. 161 Mayangan Kota Probolinggo
+            672000
           </p>
           <p class="mb-3"><i class="bi bi-envelope-fill me-3"></i>binarcarrental@gmail.com</p>
           <p class="mb-3"><i class="bi bi-telephone-fill me-3"></i>081-233-334-808</p>
@@ -412,23 +429,6 @@
       </div>
     </div>
   </div>
-
-  <!-- navbar transparent to solid -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const navbar = document.querySelector('.navbar');
-
-      window.addEventListener('scroll', function () {
-        if (window.scrollY > 50) { // Ganti 50 dengan nilai yang diinginkan
-          navbar.classList.add('navbar-solid');
-          navbar.classList.remove('navbar-transparent');
-        } else {
-          navbar.classList.add('navbar-transparent');
-          navbar.classList.remove('navbar-solid');
-        }
-      });
-    });
-  </script>
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
