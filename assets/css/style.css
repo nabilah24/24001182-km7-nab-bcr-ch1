@@ -190,7 +190,7 @@ nav {
 .why-us-section .card {
   box-sizing: border-box;
   height: 196px;
-  border: 1px solid var(--darkblue00);
+  box-shadow: 0 0 4px var(--darkblue00);
 }
 
 .card-body .card-icon i {
@@ -206,7 +206,7 @@ nav {
   border-radius: 50%;
 }
 
-.card-body h5 {
+.card-body h3 {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
