@@ -214,7 +214,64 @@ nav {
 }
 
 /* testimonial */
+.carousel {
+  max-width: 832px;
+  height: auto; 
+  background-color: var(--darkblue00); 
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
 
+.carousel-item {
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item img {
+  width: 100px;
+  height: 110px;
+}
+
+.rating i {
+  color: var(--warning); 
+  font-size: 18px;
+}
+
+.carousel .carousel-control-prev-icon,
+.carousel .carousel-control-next-icon {
+  filter: invert(1.0); 
+}
+
+.carousel-item p {
+  font-size: 14px;
+  line-height: 20px;
+  max-width: 415px;
+  color: var(--neutral05);
+}
+
+.carousel-item .fw-bold {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--neutral05); 
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 8%;
+}
+
+.carousel-item .col-sm-8, .col-sm-9 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carousel-item .col-sm-4, .col-sm-3 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
 
 /* cta */
 .cta .card {
@@ -284,18 +341,18 @@ nav {
 }
 
 .footer .connect-us i {
-  display: inline-flex; /* Menjadikan elemen inline dengan fitur flexbox untuk penataan */
-  justify-content: center; /* Menyejajarkan konten secara horizontal */
-  align-items: center; /* Menyejajarkan konten secara vertikal */
+  display: inline-flex; 
+  justify-content: center; 
+  align-items: center; 
   font-size: 18px;
   font-weight: 700;
   background: var(--darkblue04);
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  text-align: center; /* Memastikan teks berada di tengah */
-  line-height: 32px; /* Menyelaraskan teks vertikal */
-  box-sizing: border-box; /* Menghitung padding dan border dalam ukuran total */
+  text-align: center; 
+  line-height: 32px; 
+  box-sizing: border-box; 
   color: var(--neutral01);
 }
 
